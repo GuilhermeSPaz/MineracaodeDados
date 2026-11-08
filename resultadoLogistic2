@@ -1,0 +1,291 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     credit_card_clients_execucao2_discretizada
+Instances:    5000
+Attributes:   24
+              LIMIT_BAL
+              SEX
+              EDUCATION
+              MARRIAGE
+              AGE
+              PAY_0
+              PAY_2
+              PAY_3
+              PAY_4
+              PAY_5
+              PAY_6
+              BILL_AMT1
+              BILL_AMT2
+              BILL_AMT3
+              BILL_AMT4
+              BILL_AMT5
+              BILL_AMT6
+              PAY_AMT1
+              PAY_AMT2
+              PAY_AMT3
+              PAY_AMT4
+              PAY_AMT5
+              PAY_AMT6
+              CLASSE_INADIMPLENCIA
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                           Class
+Variable                              Adimplente
+================================================
+LIMIT_BAL=Limite_Alto_Q4                  0.1268
+LIMIT_BAL=Limite_Baixo_Q1                 -0.227
+LIMIT_BAL=Limite_Medio_Alto_Q3            0.2494
+LIMIT_BAL=Limite_Medio_Baixo_Q2          -0.1435
+SEX=Masculino                             0.0413
+EDUCATION=Ensino_Medio                    0.0355
+EDUCATION=Outros                           0.961
+EDUCATION=Pos_Graduacao                  -0.0808
+EDUCATION=Universidade                   -0.0014
+MARRIAGE=Casado                          -0.0461
+MARRIAGE=Outros                          -0.8256
+MARRIAGE=Solteiro                         0.0872
+AGE=Adulto_30_45                         -0.0322
+AGE=Jovem_ate_29                          0.0443
+AGE=Meia_Idade_46_60                     -0.0114
+AGE=Senior_acima_60                      -0.0207
+PAY_0=Atraso_1mes                         0.0253
+PAY_0=Atraso_2mes                        -1.5572
+PAY_0=Atraso_3mes                        -1.2892
+PAY_0=Atraso_4mes                        -2.5987
+PAY_0=Atraso_5mes                        -0.0796
+PAY_0=Atraso_6mes                        11.0959
+PAY_0=Atraso_7mes                       -38.9963
+PAY_0=Atraso_8mes                         6.7701
+PAY_0=Em_Dia                               0.765
+PAY_2=Atraso_1mes                         0.5194
+PAY_2=Atraso_2mes                         0.0034
+PAY_2=Atraso_3mes                         0.1542
+PAY_2=Atraso_4mes                          0.439
+PAY_2=Atraso_5mes                       -12.4689
+PAY_2=Atraso_6mes                         5.2116
+PAY_2=Atraso_7mes                         6.7701
+PAY_2=Em_Dia                             -0.0039
+PAY_3=Atraso_1mes                         8.7267
+PAY_3=Atraso_2mes                         0.0497
+PAY_3=Atraso_3mes                        -0.2596
+PAY_3=Atraso_4mes                         0.2872
+PAY_3=Atraso_5mes                        16.6127
+PAY_3=Atraso_6mes                       -10.9197
+PAY_3=Atraso_7mes                       -11.2683
+PAY_3=Em_Dia                              0.0213
+PAY_4=Atraso_1mes                         8.7267
+PAY_4=Atraso_2mes                         0.0582
+PAY_4=Atraso_3mes                        -0.0203
+PAY_4=Atraso_4mes                          1.217
+PAY_4=Atraso_5mes                        -3.1999
+PAY_4=Atraso_7mes                       -11.4942
+PAY_4=Em_Dia                              0.0793
+PAY_5=Atraso_2mes                        -0.1849
+PAY_5=Atraso_3mes                         0.1369
+PAY_5=Atraso_4mes                         2.6357
+PAY_5=Atraso_5mes                         1.8004
+PAY_5=Atraso_7mes                       -11.4942
+PAY_5=Em_Dia                              0.1715
+PAY_6=Atraso_2mes                        -0.0941
+PAY_6=Atraso_3mes                         -1.003
+PAY_6=Atraso_4mes                         -2.167
+PAY_6=Atraso_6mes                        15.5527
+PAY_6=Atraso_7mes                       -11.4942
+PAY_6=Em_Dia                              0.3182
+BILL_AMT1=Fatura_Alta_acima_50k          -0.0526
+BILL_AMT1=Fatura_Baixa_ate_10k           -0.1825
+BILL_AMT1=Fatura_Media_10k_50k             0.201
+BILL_AMT1=Sem_Saldo_ou_Negativo           0.0441
+BILL_AMT2=Fatura_Alta_acima_50k          -0.0153
+BILL_AMT2=Fatura_Baixa_ate_10k            0.1233
+BILL_AMT2=Fatura_Media_10k_50k           -0.3262
+BILL_AMT2=Sem_Saldo_ou_Negativo           0.5282
+BILL_AMT3=Fatura_Alta_acima_50k           0.0354
+BILL_AMT3=Fatura_Baixa_ate_10k           -0.2323
+BILL_AMT3=Fatura_Media_10k_50k            0.1384
+BILL_AMT3=Sem_Saldo_ou_Negativo           0.0572
+BILL_AMT4=Fatura_Alta_acima_50k          -0.3365
+BILL_AMT4=Fatura_Baixa_ate_10k            0.0703
+BILL_AMT4=Fatura_Media_10k_50k           -0.0034
+BILL_AMT4=Sem_Saldo_ou_Negativo           0.4928
+BILL_AMT5=Fatura_Alta_acima_50k          -0.0422
+BILL_AMT5=Fatura_Baixa_ate_10k            0.0745
+BILL_AMT5=Fatura_Media_10k_50k            0.1326
+BILL_AMT5=Sem_Saldo_ou_Negativo          -0.2988
+BILL_AMT6=Fatura_Alta_acima_50k           0.0892
+BILL_AMT6=Fatura_Baixa_ate_10k           -0.1058
+BILL_AMT6=Fatura_Media_10k_50k           -0.0814
+BILL_AMT6=Sem_Saldo_ou_Negativo            0.164
+PAY_AMT1=Pgto_Alto_acima_10k               0.258
+PAY_AMT1=Pgto_Baixo_ate_2k                0.0225
+PAY_AMT1=Pgto_Medio_2k_10k                 0.119
+PAY_AMT1=Sem_Pagamento_0                  -0.396
+PAY_AMT2=Pgto_Alto_acima_10k              0.2267
+PAY_AMT2=Pgto_Baixo_ate_2k                0.1199
+PAY_AMT2=Pgto_Medio_2k_10k                0.1214
+PAY_AMT2=Sem_Pagamento_0                 -0.5104
+PAY_AMT3=Pgto_Alto_acima_10k               0.191
+PAY_AMT3=Pgto_Baixo_ate_2k                0.0127
+PAY_AMT3=Pgto_Medio_2k_10k                0.0888
+PAY_AMT3=Sem_Pagamento_0                 -0.2536
+PAY_AMT4=Pgto_Alto_acima_10k             -0.0795
+PAY_AMT4=Pgto_Baixo_ate_2k               -0.1266
+PAY_AMT4=Pgto_Medio_2k_10k                0.1648
+PAY_AMT4=Sem_Pagamento_0                  -0.004
+PAY_AMT5=Pgto_Alto_acima_10k              0.2794
+PAY_AMT5=Pgto_Baixo_ate_2k                0.0058
+PAY_AMT5=Pgto_Medio_2k_10k                0.0235
+PAY_AMT5=Sem_Pagamento_0                  -0.164
+PAY_AMT6=Pgto_Alto_acima_10k              0.0276
+PAY_AMT6=Pgto_Baixo_ate_2k                0.0046
+PAY_AMT6=Pgto_Medio_2k_10k                0.0945
+PAY_AMT6=Sem_Pagamento_0                 -0.1309
+Intercept                                 0.5095
+
+
+Odds Ratios...
+                                           Class
+Variable                              Adimplente
+================================================
+LIMIT_BAL=Limite_Alto_Q4                  1.1352
+LIMIT_BAL=Limite_Baixo_Q1                 0.7969
+LIMIT_BAL=Limite_Medio_Alto_Q3            1.2833
+LIMIT_BAL=Limite_Medio_Baixo_Q2           0.8663
+SEX=Masculino                             1.0422
+EDUCATION=Ensino_Medio                    1.0361
+EDUCATION=Outros                          2.6143
+EDUCATION=Pos_Graduacao                   0.9224
+EDUCATION=Universidade                    0.9986
+MARRIAGE=Casado                           0.9549
+MARRIAGE=Outros                            0.438
+MARRIAGE=Solteiro                         1.0911
+AGE=Adulto_30_45                          0.9683
+AGE=Jovem_ate_29                          1.0453
+AGE=Meia_Idade_46_60                      0.9887
+AGE=Senior_acima_60                       0.9795
+PAY_0=Atraso_1mes                         1.0256
+PAY_0=Atraso_2mes                         0.2107
+PAY_0=Atraso_3mes                         0.2755
+PAY_0=Atraso_4mes                         0.0744
+PAY_0=Atraso_5mes                         0.9235
+PAY_0=Atraso_6mes                       65903.29
+PAY_0=Atraso_7mes                              0
+PAY_0=Atraso_8mes                       871.4037
+PAY_0=Em_Dia                              2.1489
+PAY_2=Atraso_1mes                          1.681
+PAY_2=Atraso_2mes                         1.0034
+PAY_2=Atraso_3mes                         1.1668
+PAY_2=Atraso_4mes                         1.5511
+PAY_2=Atraso_5mes                              0
+PAY_2=Atraso_6mes                       183.3854
+PAY_2=Atraso_7mes                       871.4037
+PAY_2=Em_Dia                              0.9961
+PAY_3=Atraso_1mes                      6165.6525
+PAY_3=Atraso_2mes                         1.0509
+PAY_3=Atraso_3mes                         0.7713
+PAY_3=Atraso_4mes                         1.3327
+PAY_3=Atraso_5mes                  16398144.4955
+PAY_3=Atraso_6mes                              0
+PAY_3=Atraso_7mes                              0
+PAY_3=Em_Dia                              1.0215
+PAY_4=Atraso_1mes                      6165.6523
+PAY_4=Atraso_2mes                           1.06
+PAY_4=Atraso_3mes                         0.9799
+PAY_4=Atraso_4mes                          3.377
+PAY_4=Atraso_5mes                         0.0408
+PAY_4=Atraso_7mes                              0
+PAY_4=Em_Dia                              1.0826
+PAY_5=Atraso_2mes                         0.8311
+PAY_5=Atraso_3mes                         1.1467
+PAY_5=Atraso_4mes                        13.9531
+PAY_5=Atraso_5mes                         6.0522
+PAY_5=Atraso_7mes                              0
+PAY_5=Em_Dia                              1.1871
+PAY_6=Atraso_2mes                         0.9102
+PAY_6=Atraso_3mes                         0.3668
+PAY_6=Atraso_4mes                         0.1145
+PAY_6=Atraso_6mes                   5681499.9003
+PAY_6=Atraso_7mes                              0
+PAY_6=Em_Dia                              1.3746
+BILL_AMT1=Fatura_Alta_acima_50k           0.9488
+BILL_AMT1=Fatura_Baixa_ate_10k            0.8331
+BILL_AMT1=Fatura_Media_10k_50k            1.2226
+BILL_AMT1=Sem_Saldo_ou_Negativo           1.0451
+BILL_AMT2=Fatura_Alta_acima_50k           0.9848
+BILL_AMT2=Fatura_Baixa_ate_10k            1.1312
+BILL_AMT2=Fatura_Media_10k_50k            0.7216
+BILL_AMT2=Sem_Saldo_ou_Negativo           1.6958
+BILL_AMT3=Fatura_Alta_acima_50k            1.036
+BILL_AMT3=Fatura_Baixa_ate_10k            0.7927
+BILL_AMT3=Fatura_Media_10k_50k            1.1484
+BILL_AMT3=Sem_Saldo_ou_Negativo           1.0589
+BILL_AMT4=Fatura_Alta_acima_50k           0.7143
+BILL_AMT4=Fatura_Baixa_ate_10k            1.0729
+BILL_AMT4=Fatura_Media_10k_50k            0.9966
+BILL_AMT4=Sem_Saldo_ou_Negativo            1.637
+BILL_AMT5=Fatura_Alta_acima_50k           0.9587
+BILL_AMT5=Fatura_Baixa_ate_10k            1.0773
+BILL_AMT5=Fatura_Media_10k_50k            1.1418
+BILL_AMT5=Sem_Saldo_ou_Negativo           0.7417
+BILL_AMT6=Fatura_Alta_acima_50k           1.0933
+BILL_AMT6=Fatura_Baixa_ate_10k            0.8996
+BILL_AMT6=Fatura_Media_10k_50k            0.9218
+BILL_AMT6=Sem_Saldo_ou_Negativo           1.1782
+PAY_AMT1=Pgto_Alto_acima_10k              1.2943
+PAY_AMT1=Pgto_Baixo_ate_2k                1.0227
+PAY_AMT1=Pgto_Medio_2k_10k                1.1264
+PAY_AMT1=Sem_Pagamento_0                   0.673
+PAY_AMT2=Pgto_Alto_acima_10k              1.2544
+PAY_AMT2=Pgto_Baixo_ate_2k                1.1274
+PAY_AMT2=Pgto_Medio_2k_10k                 1.129
+PAY_AMT2=Sem_Pagamento_0                  0.6003
+PAY_AMT3=Pgto_Alto_acima_10k              1.2105
+PAY_AMT3=Pgto_Baixo_ate_2k                1.0127
+PAY_AMT3=Pgto_Medio_2k_10k                1.0929
+PAY_AMT3=Sem_Pagamento_0                   0.776
+PAY_AMT4=Pgto_Alto_acima_10k              0.9236
+PAY_AMT4=Pgto_Baixo_ate_2k                0.8811
+PAY_AMT4=Pgto_Medio_2k_10k                1.1792
+PAY_AMT4=Sem_Pagamento_0                   0.996
+PAY_AMT5=Pgto_Alto_acima_10k              1.3223
+PAY_AMT5=Pgto_Baixo_ate_2k                1.0058
+PAY_AMT5=Pgto_Medio_2k_10k                1.0237
+PAY_AMT5=Sem_Pagamento_0                  0.8487
+PAY_AMT6=Pgto_Alto_acima_10k               1.028
+PAY_AMT6=Pgto_Baixo_ate_2k                1.0046
+PAY_AMT6=Pgto_Medio_2k_10k                1.0991
+PAY_AMT6=Sem_Pagamento_0                  0.8773
+
+
+Time taken to build model: 0.67 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4088               81.76   %
+Incorrectly Classified Instances       912               18.24   %
+Kappa statistic                          0.3615
+Mean absolute error                      0.2718
+Root mean squared error                  0.3736
+Relative absolute error                 78.8574 %
+Root relative squared error             90.0105 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,951    0,651    0,837      0,951    0,890      0,389    0,752     0,889     Adimplente
+                 0,349    0,049    0,668      0,349    0,458      0,389    0,752     0,524     Inadimplente
+Weighted Avg.    0,818    0,518    0,800      0,818    0,795      0,389    0,752     0,809     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3702  192 |    a = Adimplente
+  720  386 |    b = Inadimplente
+

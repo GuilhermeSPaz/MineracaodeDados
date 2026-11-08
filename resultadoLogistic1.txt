@@ -1,0 +1,207 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4
+Relation:     credit_card_clients_execucao1
+Instances:    5000
+Attributes:   24
+              LIMIT_BAL
+              SEX
+              EDUCATION
+              MARRIAGE
+              AGE
+              PAY_0
+              PAY_2
+              PAY_3
+              PAY_4
+              PAY_5
+              PAY_6
+              BILL_AMT1
+              BILL_AMT2
+              BILL_AMT3
+              BILL_AMT4
+              BILL_AMT5
+              BILL_AMT6
+              PAY_AMT1
+              PAY_AMT2
+              PAY_AMT3
+              PAY_AMT4
+              PAY_AMT5
+              PAY_AMT6
+              CLASSE_INADIMPLENCIA
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Logistic Regression with ridge parameter of 1.0E-8
+Coefficients...
+                                           Class
+Variable                              Adimplente
+================================================
+LIMIT_BAL                                      0
+SEX=Masculino                            -0.0041
+EDUCATION=Ensino_Medio                    0.0094
+EDUCATION=Outros                          0.9916
+EDUCATION=Pos_Graduacao                  -0.0842
+EDUCATION=Universidade                    0.0138
+MARRIAGE=Casado                          -0.0776
+MARRIAGE=Outros                          -0.8429
+MARRIAGE=Solteiro                         0.1194
+AGE                                       0.0043
+PAY_0=Atraso_1mes                        -0.0523
+PAY_0=Atraso_2mes                        -1.4409
+PAY_0=Atraso_3mes                        -1.4506
+PAY_0=Atraso_4mes                         -2.249
+PAY_0=Atraso_5mes                        -0.5041
+PAY_0=Atraso_6mes                        14.1706
+PAY_0=Atraso_7mes                       -87.7417
+PAY_0=Atraso_8mes                        14.6043
+PAY_0=Em_Dia                              0.8138
+PAY_2=Atraso_1mes                         0.6211
+PAY_2=Atraso_2mes                        -0.1057
+PAY_2=Atraso_3mes                        -0.2798
+PAY_2=Atraso_4mes                         0.3235
+PAY_2=Atraso_5mes                       -15.6009
+PAY_2=Atraso_6mes                        24.8739
+PAY_2=Atraso_7mes                        14.6043
+PAY_2=Em_Dia                              -0.009
+PAY_3=Atraso_1mes                        55.6058
+PAY_3=Atraso_2mes                        -0.1204
+PAY_3=Atraso_3mes                          -0.78
+PAY_3=Atraso_4mes                        -0.1842
+PAY_3=Atraso_5mes                        39.0893
+PAY_3=Atraso_6mes                       -21.7683
+PAY_3=Atraso_7mes                       -12.0438
+PAY_3=Em_Dia                              0.1238
+PAY_4=Atraso_1mes                        55.6058
+PAY_4=Atraso_2mes                         0.0621
+PAY_4=Atraso_3mes                        -0.0877
+PAY_4=Atraso_4mes                         1.0423
+PAY_4=Atraso_5mes                        -8.8278
+PAY_4=Atraso_7mes                       -12.7218
+PAY_4=Em_Dia                              0.0953
+PAY_5=Atraso_2mes                        -0.0888
+PAY_5=Atraso_3mes                         0.2615
+PAY_5=Atraso_4mes                         2.4352
+PAY_5=Atraso_5mes                         2.9053
+PAY_5=Atraso_7mes                       -12.7218
+PAY_5=Em_Dia                              0.0993
+PAY_6=Atraso_2mes                        -0.1321
+PAY_6=Atraso_3mes                        -1.2716
+PAY_6=Atraso_4mes                        -2.2958
+PAY_6=Atraso_6mes                        14.4638
+PAY_6=Atraso_7mes                       -12.7218
+PAY_6=Em_Dia                              0.3908
+BILL_AMT1                                      0
+BILL_AMT2                                     -0
+BILL_AMT3                                     -0
+BILL_AMT4                                      0
+BILL_AMT5                                     -0
+BILL_AMT6                                      0
+PAY_AMT1                                       0
+PAY_AMT2                                       0
+PAY_AMT3                                      -0
+PAY_AMT4                                       0
+PAY_AMT5                                      -0
+PAY_AMT6                                       0
+Intercept                                -0.0586
+
+
+Odds Ratios...
+                                           Class
+Variable                              Adimplente
+================================================
+LIMIT_BAL                                      1
+SEX=Masculino                             0.9959
+EDUCATION=Ensino_Medio                    1.0094
+EDUCATION=Outros                          2.6955
+EDUCATION=Pos_Graduacao                   0.9193
+EDUCATION=Universidade                    1.0139
+MARRIAGE=Casado                           0.9253
+MARRIAGE=Outros                           0.4305
+MARRIAGE=Solteiro                         1.1268
+AGE                                       1.0043
+PAY_0=Atraso_1mes                          0.949
+PAY_0=Atraso_2mes                         0.2367
+PAY_0=Atraso_3mes                         0.2344
+PAY_0=Atraso_4mes                         0.1055
+PAY_0=Atraso_5mes                         0.6041
+PAY_0=Atraso_6mes                   1426249.0108
+PAY_0=Atraso_7mes                              0
+PAY_0=Atraso_8mes                   2200690.2023
+PAY_0=Em_Dia                              2.2566
+PAY_2=Atraso_1mes                         1.8609
+PAY_2=Atraso_2mes                         0.8997
+PAY_2=Atraso_3mes                         0.7559
+PAY_2=Atraso_4mes                         1.3819
+PAY_2=Atraso_5mes                              0
+PAY_2=Atraso_6mes          6.3476417593572784E10
+PAY_2=Atraso_7mes                   2200690.4605
+PAY_2=Em_Dia                              0.9911
+PAY_3=Atraso_1mes           1.410235251016038E24
+PAY_3=Atraso_2mes                         0.8866
+PAY_3=Atraso_3mes                         0.4584
+PAY_3=Atraso_4mes                         0.8318
+PAY_3=Atraso_5mes           9.468384488560986E16
+PAY_3=Atraso_6mes                              0
+PAY_3=Atraso_7mes                              0
+PAY_3=Em_Dia                              1.1318
+PAY_4=Atraso_1mes          1.4102354771279968E24
+PAY_4=Atraso_2mes                         1.0641
+PAY_4=Atraso_3mes                         0.9161
+PAY_4=Atraso_4mes                         2.8357
+PAY_4=Atraso_5mes                         0.0001
+PAY_4=Atraso_7mes                              0
+PAY_4=Em_Dia                                 1.1
+PAY_5=Atraso_2mes                          0.915
+PAY_5=Atraso_3mes                         1.2989
+PAY_5=Atraso_4mes                        11.4176
+PAY_5=Atraso_5mes                          18.27
+PAY_5=Atraso_7mes                              0
+PAY_5=Em_Dia                              1.1044
+PAY_6=Atraso_2mes                         0.8763
+PAY_6=Atraso_3mes                         0.2804
+PAY_6=Atraso_4mes                         0.1007
+PAY_6=Atraso_6mes                   1912325.6016
+PAY_6=Atraso_7mes                              0
+PAY_6=Em_Dia                              1.4782
+BILL_AMT1                                      1
+BILL_AMT2                                      1
+BILL_AMT3                                      1
+BILL_AMT4                                      1
+BILL_AMT5                                      1
+BILL_AMT6                                      1
+PAY_AMT1                                       1
+PAY_AMT2                                       1
+PAY_AMT3                                       1
+PAY_AMT4                                       1
+PAY_AMT5                                       1
+PAY_AMT6                                       1
+
+
+Time taken to build model: 0.47 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4082               81.64   %
+Incorrectly Classified Instances       918               18.36   %
+Kappa statistic                          0.3573
+Mean absolute error                      0.2739
+Root mean squared error                  0.3737
+Relative absolute error                 79.4845 %
+Root relative squared error             90.0305 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,950    0,654    0,836      0,950    0,890      0,385    0,750     0,888     Adimplente
+                 0,346    0,050    0,663      0,346    0,455      0,385    0,750     0,523     Inadimplente
+Weighted Avg.    0,816    0,520    0,798      0,816    0,793      0,385    0,750     0,807     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3699  195 |    a = Adimplente
+  723  383 |    b = Inadimplente
+

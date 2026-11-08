@@ -1,0 +1,63 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.ZeroR 
+Relation:     credit_card_clients_execucao1
+Instances:    5000
+Attributes:   24
+              LIMIT_BAL
+              SEX
+              EDUCATION
+              MARRIAGE
+              AGE
+              PAY_0
+              PAY_2
+              PAY_3
+              PAY_4
+              PAY_5
+              PAY_6
+              BILL_AMT1
+              BILL_AMT2
+              BILL_AMT3
+              BILL_AMT4
+              BILL_AMT5
+              BILL_AMT6
+              PAY_AMT1
+              PAY_AMT2
+              PAY_AMT3
+              PAY_AMT4
+              PAY_AMT5
+              PAY_AMT6
+              CLASSE_INADIMPLENCIA
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+ZeroR predicts class value: Adimplente
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3894               77.88   %
+Incorrectly Classified Instances      1106               22.12   %
+Kappa statistic                          0     
+Mean absolute error                      0.3446
+Root mean squared error                  0.4151
+Relative absolute error                100      %
+Root relative squared error            100      %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 1,000    1,000    0,779      1,000    0,876      ?        0,499     0,778     Adimplente
+                 0,000    0,000    ?          0,000    ?          ?        0,499     0,221     Inadimplente
+Weighted Avg.    0,779    0,779    ?          0,779    ?          ?        0,499     0,655     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3894    0 |    a = Adimplente
+ 1106    0 |    b = Inadimplente
+

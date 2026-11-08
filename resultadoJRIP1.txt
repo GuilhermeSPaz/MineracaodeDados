@@ -1,0 +1,72 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     credit_card_clients_execucao1
+Instances:    5000
+Attributes:   24
+              LIMIT_BAL
+              SEX
+              EDUCATION
+              MARRIAGE
+              AGE
+              PAY_0
+              PAY_2
+              PAY_3
+              PAY_4
+              PAY_5
+              PAY_6
+              BILL_AMT1
+              BILL_AMT2
+              BILL_AMT3
+              BILL_AMT4
+              BILL_AMT5
+              BILL_AMT6
+              PAY_AMT1
+              PAY_AMT2
+              PAY_AMT3
+              PAY_AMT4
+              PAY_AMT5
+              PAY_AMT6
+              CLASSE_INADIMPLENCIA
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(PAY_0 = Atraso_2mes) => CLASSE_INADIMPLENCIA=Inadimplente (441.0/133.0)
+(PAY_2 = Atraso_2mes) and (PAY_AMT2 <= 4) => CLASSE_INADIMPLENCIA=Inadimplente (94.0/34.0)
+(PAY_AMT1 <= 1053) and (BILL_AMT2 >= 791) and (PAY_AMT2 <= 4500) and (BILL_AMT3 >= 3618) => CLASSE_INADIMPLENCIA=Inadimplente (221.0/109.0)
+ => CLASSE_INADIMPLENCIA=Adimplente (4244.0/626.0)
+
+Number of Rules : 4
+
+
+Time taken to build model: 0.31 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4054               81.08   %
+Incorrectly Classified Instances       946               18.92   %
+Kappa statistic                          0.3458
+Mean absolute error                      0.2915
+Root mean squared error                  0.3854
+Relative absolute error                 84.586  %
+Root relative squared error             92.8519 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,942    0,652    0,836      0,942    0,886      0,368    0,647     0,833     Adimplente
+                 0,348    0,058    0,631      0,348    0,449      0,368    0,647     0,412     Inadimplente
+Weighted Avg.    0,811    0,520    0,791      0,811    0,789      0,368    0,647     0,740     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3669  225 |    a = Adimplente
+  721  385 |    b = Inadimplente
+

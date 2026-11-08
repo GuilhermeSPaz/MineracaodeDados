@@ -1,0 +1,74 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.rules.JRip -F 3 -N 2.0 -O 2 -S 1
+Relation:     credit_card_clients_execucao2_discretizada
+Instances:    5000
+Attributes:   24
+              LIMIT_BAL
+              SEX
+              EDUCATION
+              MARRIAGE
+              AGE
+              PAY_0
+              PAY_2
+              PAY_3
+              PAY_4
+              PAY_5
+              PAY_6
+              BILL_AMT1
+              BILL_AMT2
+              BILL_AMT3
+              BILL_AMT4
+              BILL_AMT5
+              BILL_AMT6
+              PAY_AMT1
+              PAY_AMT2
+              PAY_AMT3
+              PAY_AMT4
+              PAY_AMT5
+              PAY_AMT6
+              CLASSE_INADIMPLENCIA
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+JRIP rules:
+===========
+
+(PAY_0 = Atraso_2mes) => CLASSE_INADIMPLENCIA=Inadimplente (441.0/133.0)
+(PAY_AMT2 = Sem_Pagamento_0) and (PAY_2 = Atraso_2mes) => CLASSE_INADIMPLENCIA=Inadimplente (93.0/34.0)
+(PAY_2 = Atraso_2mes) and (PAY_0 = Atraso_3mes) => CLASSE_INADIMPLENCIA=Inadimplente (19.0/6.0)
+(PAY_0 = Atraso_1mes) and (LIMIT_BAL = Limite_Baixo_Q1) and (BILL_AMT5 = Sem_Saldo_ou_Negativo) => CLASSE_INADIMPLENCIA=Inadimplente (29.0/12.0)
+(PAY_3 = Atraso_2mes) and (PAY_AMT1 = Sem_Pagamento_0) => CLASSE_INADIMPLENCIA=Inadimplente (78.0/37.0)
+ => CLASSE_INADIMPLENCIA=Adimplente (4340.0/668.0)
+
+Number of Rules : 6
+
+
+Time taken to build model: 0.05 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        4069               81.38   %
+Incorrectly Classified Instances       931               18.62   %
+Kappa statistic                          0.357 
+Mean absolute error                      0.2899
+Root mean squared error                  0.3843
+Relative absolute error                 84.1115 %
+Root relative squared error             92.5885 %
+Total Number of Instances             5000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0,944    0,644    0,838      0,944    0,888      0,380    0,648     0,835     Adimplente
+                 0,356    0,056    0,643      0,356    0,458      0,380    0,648     0,409     Inadimplente
+Weighted Avg.    0,814    0,514    0,795      0,814    0,793      0,380    0,648     0,741     
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3675  219 |    a = Adimplente
+  712  394 |    b = Inadimplente
+
